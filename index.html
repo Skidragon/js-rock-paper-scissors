@@ -5,16 +5,61 @@
   <title>Rock, Paper, Scissors</title>
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="styles.css">
-  <script type="text/javascript" src="game.js"></script>
 </head>
 
 <body>
 
-  <main class="container">
+  <main class="main-container">
     <div class="play-area">
-      <p>Test</p>
+
+      <div class="output">
+
+        <div class="output-player border">
+          <h2 class="player-title">You:</h2>
+          <p class="output-selection" id="player-selection">Choose...</p>
+        </div>
+
+        <div class="output-main border">
+          <div class="output-main-item output-score">
+            <div class="score-container">
+              <h3 class="score-title">Win</h3>
+              <p class="score" id="player-score">0</p>
+            </div>
+            <div class="score-container">
+              <h3 class="score-title">Tie</h3>
+              <p class="score" id="tie-score">0</p>
+            </div>
+            <div class="score-container">
+              <h3 class="score-title">Win</h3>
+              <p class="score" id="computer-score">0</p>
+            </div>
+          </div>
+
+          <div class="output-main-item output-rounds">
+            <p>Round <span id="current-round">0</span></p>
+          </div>
+
+          <div class="output-main-item output-result">
+            <p id="output-message">Choose to start:</p>
+          </div>
+
+          <div class="output-main-item options">
+            <a href="#" class="player-selection" data-selection="rock">Rock</a>
+            <a href="#" class="player-selection" data-selection="paper">Paper</a>
+            <a href="#" class="player-selection" data-selection="scissors">Scissors</a>
+          </div>
+        </div>
+
+        <div class="output-computer border">
+          <h2 class="computer-title">Computer:</h2>
+          <p class="output-selection" id="computer-selection">Waiting...</p>
+        </div>
+
+      </div>
+
     </div>
   </main>
 
+<script type="text/javascript" src="game.js"></script>
 </body>
 </html>

@@ -1,7 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 22px;
 }
 
 body {
   font-size: 1rem;
+}
+
+div {
+  padding: .5rem;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.play-area {
+  align-self: center;
+  width: 1000px;
+}
+
+.output {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.border {
+  border: 1px solid #ccc;
+  border-radius: .15rem;
+}
+
+.output-player,
+.output-computer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 28%;
+}
+
+.output-selection {
+  font-size: 1.2rem;
+}
+
+.output-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 44%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.output-main-item {
+  align-self: center;
+}
+
+.output-score {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 4rem;
+  background-color: #f0f0f0;
+  border-radius: .15rem;
+}
+
+.score-title {
+  margin-top: 0;
+}
+
+.score {
+  margin-top: 0;
+  margin-bottom: 0;
 }
