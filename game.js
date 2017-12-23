@@ -42,6 +42,12 @@ class Game {
   }
 
   findWinner() {
+    if (this.round < 5) return this.findRoundWinner();
+
+    return this.findGameWinner();
+  }
+
+  findRoundWinner() {
     if (this.playerSelection == this.computerSelection) {
       return this.tieInRound();
 
@@ -55,7 +61,7 @@ class Game {
   tieInRound() {
     this.tieScore++;
     this.outputInformation();
-    this.outputMessage("You tied with the computer!");
+    this.outputMessage("Tie!");
   }
 
   playerWinsRound() {
@@ -72,6 +78,38 @@ class Game {
     this.outputMessage(
       `${capitalize(this.computerSelection)} beats ${this.playerSelection}.`
     );
+  }
+
+  findGameWinner() {
+    if (this.playerScore > this.computerScore) {
+      return this.playerWinsGame();
+
+    } else if (this.computerScore > this.playerScore) {
+      return this.computerWinsGame();
+    }
+
+    return this.theresNoWinner();
+  }
+
+  playerWinsGame() {
+    this.playerScore++;
+    this.outputInformation();
+    this.outputMessage("You won the game!");
+    this.prepareGameRestart();
+  }
+
+  computerWinsGame() {
+    this.computerScore++;
+    this.outputInformation();
+    this.outputMessage("Ouch! The computer wins.");
+    this.prepareGameRestart();
+  }
+
+  theresNoWinner() {
+    this.tieScore++;
+    this.outputInformation();
+    this.outputMessage("There's no winner!");
+    this.prepareGameRestart();
   }
 
   outputInformation() {
@@ -108,6 +146,30 @@ class Game {
     let outputMessage = document.querySelector("#output-message");
 
     outputMessage.innerHTML = message;
+  }
+
+  prepareGameRestart() {
+    this.toggleElement("#options-restart");
+    this.toggleElement("#options-throw");
+    this.listenForRestart();
+  }
+
+  toggleElement(id) {
+    let element = document.querySelector(id);
+
+    element.classList.toggle("display-none");
+  }
+
+  listenForRestart() {
+    let restartGame = document.querySelector("#restart-game");
+
+    restartGame.addEventListener("click", () => {
+      this.restartGame();
+    });
+  }
+
+  restartGame() {
+    location.reload();
   }
 
 }
