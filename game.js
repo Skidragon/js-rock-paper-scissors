@@ -38,13 +38,33 @@ class Game {
     this.computerSelection = sample(OPTIONS);
     this.round++;
 
+    this.countDown();
     this.findWinner();
   }
 
-  findWinner() {
-    if (this.round < 5) return this.findRoundWinner();
+  countDown() {
+    let seconds = 3;
+    let outputs = document.querySelectorAll(".output-selection");
 
-    return this.findGameWinner();
+    setInterval(() => {
+      if (seconds > 0) {
+        outputs.forEach(output => {
+          output.innerText = seconds;
+        });
+        seconds--;
+
+      } else {
+        return;
+      }
+    }, 1000);
+  }
+
+  findWinner() {
+    window.setTimeout(() => {
+      if (this.round < 5) return this.findRoundWinner();
+
+      return this.findGameWinner();
+    }, 4000);
   }
 
   findRoundWinner() {
@@ -174,5 +194,4 @@ class Game {
 
 }
 
-let game = new Game();
-game.start();
+new Game().start();
