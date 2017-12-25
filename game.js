@@ -43,6 +43,8 @@ class Game {
   }
 
   countDown() {
+    this.removeOutputMessage();
+
     let seconds = 3;
     let outputs = document.querySelectorAll(".output-selection");
 
@@ -56,6 +58,12 @@ class Game {
       } else {
         return;
       }
+    }, 1000);
+  }
+
+  removeOutputMessage() {
+    window.setTimeout(() => {
+      this.outputMessage("&nbsp;");
     }, 1000);
   }
 
