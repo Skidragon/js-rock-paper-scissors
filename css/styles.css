@@ -8,6 +8,7 @@ html {
 
 body {
   font-size: 1rem;
+  background-color: #f8f8fa;
 }
 
 div {
@@ -43,10 +44,19 @@ div {
   flex-direction: column;
   align-items: center;
   flex-basis: 28%;
+  color: #fff;
+  background-color: #484a61;
+  border: 1px solid transparent;
+  border-radius: .15rem;
+}
+
+.player-title,
+.computer-title {
+  font-size: 1.55rem;
 }
 
 .output-selection {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .output-main {
@@ -56,6 +66,9 @@ div {
   flex-basis: 44%;
   margin-left: 1rem;
   margin-right: 1rem;
+  background-color: #fff;
+  border: 1px solid rgba(72, 74, 97, .3);
+  border-radius: .15rem;
 }
 
 .output-main-item {
@@ -73,8 +86,20 @@ div {
   flex-direction: column;
   align-items: center;
   width: 4rem;
-  background-color: #f0f0f0;
+  background-color: rgba(250, 250, 250, .5);
   border-radius: .15rem;
+}
+
+.score-container-player {
+  border: 1px solid #59d975;
+}
+
+.score-container-tie {
+  border: 1px solid #d7b657;
+}
+
+.score-container-computer {
+  border: 1px solid #d95959;
 }
 
 .score-title {
