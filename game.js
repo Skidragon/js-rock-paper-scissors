@@ -71,9 +71,7 @@ class Game {
 
   delayedOutputReaction(reaction) {
     window.setTimeout(() => {
-      let outputReaction = document.querySelector("#output-reaction");
-
-      outputReaction.innerHTML = reaction;
+      this.outputReaction(reaction);
     }, 1000);
   }
 
