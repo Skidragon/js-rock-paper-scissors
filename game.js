@@ -13,6 +13,8 @@ const DEFEATEDBY = {
   scissors: "paper"
 };
 
+const BUTTONS = document.querySelectorAll(".player-selection");
+
 class Game {
 
   constructor() {
@@ -23,9 +25,7 @@ class Game {
   }
 
   start() {
-    let buttons = document.querySelectorAll(".player-selection");
-
-    buttons.forEach(button => {
+    BUTTONS.forEach(button => {
       button.addEventListener("click", () => {
         this.animateButton(button);
         this.playerSelection = button.dataset.selection;
@@ -52,8 +52,32 @@ class Game {
   }
 
   countDown() {
+    this.disableButtons();
     this.delayedOutputReaction("😯");
+    this.startCountDown();
+  }
 
+  disableButtons() {
+    BUTTONS.forEach(button => {
+      button.disabled = true;
+    });
+
+    window.setTimeout(() => {
+      BUTTONS.forEach(button => {
+        button.disabled = false;
+      });
+    }, 4000);
+  }
+
+  delayedOutputReaction(reaction) {
+    window.setTimeout(() => {
+      let outputReaction = document.querySelector("#output-reaction");
+
+      outputReaction.innerHTML = reaction;
+    }, 1000);
+  }
+
+  startCountDown() {
     let seconds = 3;
     let outputs = document.querySelectorAll(".output-selection");
 
@@ -178,14 +202,6 @@ class Game {
     playerScore.innerText = this.playerScore;
     tieScore.innerText = this.tieScore;
     computerScore.innerText = this.computerScore;
-  }
-
-  delayedOutputReaction(reaction) {
-    window.setTimeout(() => {
-      let outputReaction = document.querySelector("#output-reaction");
-
-      outputReaction.innerHTML = reaction;
-    }, 1000);
   }
 
   outputReaction(reaction) {
