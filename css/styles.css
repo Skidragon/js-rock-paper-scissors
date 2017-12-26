@@ -20,7 +20,7 @@ div {
 
 .play-area {
   align-self: center;
-  width: 1000px; }
+  width: 1040px; }
 
 .output {
   display: flex;
@@ -33,6 +33,9 @@ div {
   flex-direction: column;
   align-items: center;
   flex-basis: 28%;
+  margin-top: 2rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.5rem;
   color: #fff;
   background-color: #484a61;
   border: 1px solid transparent;
@@ -51,8 +54,8 @@ div {
   flex-direction: column;
   justify-content: space-around;
   flex-basis: 44%;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   background-color: #fff;
   border: 1px solid rgba(72, 74, 97, 0.3);
   border-radius: 0.16rem; }
@@ -63,6 +66,7 @@ div {
 .output-score {
   display: flex;
   justify-content: space-between;
+  margin-bottom: .5rem;
   width: 100%; }
 
 .score-container {
@@ -102,6 +106,9 @@ div {
   margin-top: 1.82rem;
   margin-bottom: 2.6rem;
   color: #484a61; }
+
+.options {
+  margin-top: .5rem; }
 
 .options,
 .options-throw {
