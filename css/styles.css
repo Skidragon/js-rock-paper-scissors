@@ -114,3 +114,64 @@ div {
 .display-none {
   display: none;
 }
+
+
+.options,
+.options-throw {
+  width: 100%;
+}
+
+.options-throw,
+.options-restart {
+  padding: 0;
+}
+
+.player-selection {
+  width: 32%;
+}
+
+.btn {
+  padding: 0.5rem;
+  font-family: serif;
+  font-size: 1rem;
+  background: none;
+  color: #551A8B;
+  text-decoration: none;
+  border: 1px dotted #ccc;
+  border-radius: .15rem;
+}
+
+.btn:hover,
+.btn:focus {
+  text-decoration: none;
+  color: #fff;
+  background: #666991;
+  border: 1px solid transparent;
+  transition: all .4s;
+}
+
+.btn-animated {
+  animation: 1s ease-in-out selectedbutton;
+}
+
+@keyframes selectedbutton {
+  0% {
+    background: #666991;
+  }
+
+  26% {
+    background: #8d92cc;
+  }
+
+  54% {
+    background: #666991;
+  }
+
+  92% {
+    background: #8d92cc;
+  }
+}
+
+.btn-full-width {
+  width: 100%;
+}

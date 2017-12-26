@@ -23,15 +23,24 @@ class Game {
   }
 
   start() {
-    let options = document.querySelectorAll(".player-selection");
+    let buttons = document.querySelectorAll(".player-selection");
 
-    options.forEach(option => {
-      option.addEventListener("click", () => {
-        this.playerSelection = option.dataset.selection;
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        this.animateButton(button);
+        this.playerSelection = button.dataset.selection;
 
         this.playRound();
       });
     });
+  }
+
+  animateButton(button) {
+    button.classList.add("btn-animated");
+
+    window.setTimeout(() => {
+      button.classList.remove("btn-animated");
+    }, 1000);
   }
 
   playRound() {
