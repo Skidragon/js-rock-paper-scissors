@@ -17,7 +17,7 @@ div {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-top: 0.4rem solid #484a61; }
+  border-top: 0.4rem solid #4b4d6b; }
 
 .play-area {
   align-self: center;
@@ -38,7 +38,7 @@ div {
   padding-top: 1.6rem;
   padding-bottom: 1.5rem;
   color: #fff;
-  background-color: #484a61;
+  background-color: #4b4d6b;
   border: 1px solid transparent;
   border-radius: 0.16rem; }
 
@@ -106,7 +106,7 @@ div {
   line-height: 0;
   margin-top: 1.82rem;
   margin-bottom: 2.6rem;
-  color: #484a61; }
+  color: #4b4d6b; }
 
 .options {
   margin-top: .5rem; }
@@ -127,7 +127,7 @@ div {
   font-family: serif;
   font-size: 1rem;
   background: none;
-  color: #484a61;
+  color: #4b4d6b;
   text-decoration: none;
   border: 1px dotted #ccc;
   border-radius: 0.16rem;
@@ -137,7 +137,7 @@ div {
 .btn:focus {
   text-decoration: none;
   color: #fff;
-  background: #484a61;
+  background: #4b4d6b;
   border: 1px solid transparent; }
 
 .btn-animated {
@@ -145,11 +145,11 @@ div {
 
 @keyframes selectedbutton {
   0% {
-    background: #484a61; }
+    background: #4b4d6b; }
   26% {
     background: #8d92cc; }
   54% {
-    background: #484a61; }
+    background: #4b4d6b; }
   92% {
     background: #8d92cc; } }
 .btn-full-width {
