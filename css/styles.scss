@@ -69,8 +69,8 @@ div {
   align-items: center;
   flex-basis: 28%;
   margin-top: 2rem;
-  padding-top: 1.6rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.6rem;
   color: $white;
   background-color: $brand-color;
   border: 1px solid transparent;
@@ -79,6 +79,7 @@ div {
 
 .player-title,
 .computer-title {
+  margin-bottom: 1.2rem;
   font-size: 1.55rem;
   font-style: italic;
 }
