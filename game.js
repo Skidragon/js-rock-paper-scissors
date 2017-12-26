@@ -149,7 +149,6 @@ class Game {
   }
 
   playerWinsGame() {
-    this.playerScore++;
     this.outputInformation();
     this.outputReaction("😂");
     this.outputMessage("You won the game!");
@@ -157,7 +156,6 @@ class Game {
   }
 
   computerWinsGame() {
-    this.computerScore++;
     this.outputInformation();
     this.outputReaction("😢");
     this.outputMessage("Ouch! The computer wins.");
@@ -165,7 +163,6 @@ class Game {
   }
 
   theresNoWinner() {
-    this.tieScore++;
     this.outputInformation();
     this.outputReaction("😒");
     this.outputMessage("There's no winner!");
