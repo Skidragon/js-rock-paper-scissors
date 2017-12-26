@@ -52,7 +52,6 @@ class Game {
   }
 
   countDown() {
-    this.removeOutputMessage();
     this.delayedOutputReaction("😯");
 
     let seconds = 3;
@@ -63,17 +62,12 @@ class Game {
         outputs.forEach(output => {
           output.innerText = seconds;
         });
+        this.outputMessage(".".repeat(seconds));
         seconds--;
 
       } else {
         return;
       }
-    }, 1000);
-  }
-
-  removeOutputMessage() {
-    window.setTimeout(() => {
-      this.outputMessage("...");
     }, 1000);
   }
 
