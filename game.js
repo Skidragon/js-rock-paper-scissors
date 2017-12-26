@@ -53,6 +53,7 @@ class Game {
 
   countDown() {
     this.removeOutputMessage();
+    this.delayedOutputReaction("😯");
 
     let seconds = 3;
     let outputs = document.querySelectorAll(".output-selection");
@@ -98,12 +99,14 @@ class Game {
   tieInRound() {
     this.tieScore++;
     this.outputInformation();
+    this.outputReaction("😕");
     this.outputMessage("Tie!");
   }
 
   playerWinsRound() {
     this.playerScore++;
     this.outputInformation();
+    this.outputReaction("😁");
     this.outputMessage(
       `${capitalize(this.playerSelection)} beats ${this.computerSelection}.`
     );
@@ -112,6 +115,7 @@ class Game {
   computerWinsRound() {
     this.computerScore++;
     this.outputInformation();
+    this.outputReaction("😞");
     this.outputMessage(
       `${capitalize(this.computerSelection)} beats ${this.playerSelection}.`
     );
@@ -131,6 +135,7 @@ class Game {
   playerWinsGame() {
     this.playerScore++;
     this.outputInformation();
+    this.outputReaction("😂");
     this.outputMessage("You won the game!");
     this.prepareGameRestart();
   }
@@ -138,6 +143,7 @@ class Game {
   computerWinsGame() {
     this.computerScore++;
     this.outputInformation();
+    this.outputReaction("😢");
     this.outputMessage("Ouch! The computer wins.");
     this.prepareGameRestart();
   }
@@ -145,6 +151,7 @@ class Game {
   theresNoWinner() {
     this.tieScore++;
     this.outputInformation();
+    this.outputReaction("😒");
     this.outputMessage("There's no winner!");
     this.prepareGameRestart();
   }
@@ -177,6 +184,20 @@ class Game {
     playerScore.innerText = this.playerScore;
     tieScore.innerText = this.tieScore;
     computerScore.innerText = this.computerScore;
+  }
+
+  delayedOutputReaction(reaction) {
+    window.setTimeout(() => {
+      let outputReaction = document.querySelector("#output-reaction");
+
+      outputReaction.innerHTML = reaction;
+    }, 1000);
+  }
+
+  outputReaction(reaction) {
+    let outputReaction = document.querySelector("#output-reaction");
+
+    outputReaction.innerHTML = reaction;
   }
 
   outputMessage(message) {
