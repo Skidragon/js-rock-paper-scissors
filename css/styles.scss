@@ -72,6 +72,7 @@ div {
 .player-title,
 .computer-title {
   font-size: 1.55rem;
+  font-style: italic;
 }
 
 .output-selection {
@@ -127,6 +128,8 @@ div {
 
 .score-title {
   margin-top: 0;
+  margin-bottom: .9rem;
+  font-size: 1rem;
 }
 
 .score {
