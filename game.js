@@ -72,7 +72,7 @@ class Game {
 
   removeOutputMessage() {
     window.setTimeout(() => {
-      this.outputMessage("&nbsp;");
+      this.outputMessage("...");
     }, 1000);
   }
 
