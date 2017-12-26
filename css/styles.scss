@@ -7,6 +7,10 @@ $very-dark-violet: #252733;
 $lighter-violet: #666991;
 $light-violet: #8d92cc;
 
+$green: #59d975;
+$yellow: #d7b657;
+$red: #d95959;
+
 $light-grey: #ccc;
 $very-light-grey: #f8f8fa;
 $white: #fff;
@@ -115,15 +119,15 @@ div {
 }
 
 .score-container-player {
-  border: 1px solid #59d975;
+  border: 1px solid $green;
 }
 
 .score-container-tie {
-  border: 1px solid #d7b657;
+  border: 1px solid $yellow;
 }
 
 .score-container-computer {
-  border: 1px solid #d95959;
+  border: 1px solid $red;
 }
 
 .score-title {
