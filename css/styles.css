@@ -130,15 +130,15 @@ div {
   color: #484a61;
   text-decoration: none;
   border: 1px dotted #ccc;
-  border-radius: 0.16rem; }
+  border-radius: 0.16rem;
+  transition: all .4s; }
 
 .btn:hover,
 .btn:focus {
   text-decoration: none;
   color: #fff;
   background: #484a61;
-  border: 1px solid transparent;
-  transition: all .4s; }
+  border: 1px solid transparent; }
 
 .btn-animated {
   animation: 1s ease-in-out selectedbutton; }
