@@ -8,7 +8,7 @@ $lighter-violet: #666991;
 $light-violet: #8d92cc;
 
 $green: #59d975;
-$yellow: #d7b657;
+$yellow: #e6c25c;
 $red: #d95959;
 
 $light-grey: #ccc;
@@ -71,8 +71,8 @@ div {
   align-items: center;
   flex-basis: 28%;
   margin-top: 1.5rem;
-  padding-top: 1.7rem;
-  padding-bottom: 1.6rem;
+  padding-top: 1.9rem;
+  padding-bottom: 1.8rem;
   color: $white;
   background-color: $brand-color;
   border: 1px solid transparent;
@@ -81,7 +81,7 @@ div {
 
 .player-title,
 .computer-title {
-  margin-bottom: 1.2rem;
+  margin-bottom: .8rem;
   font-size: 1.55rem;
   font-style: italic;
 }
@@ -122,7 +122,6 @@ div {
   flex-direction: column;
   align-items: center;
   width: 4rem;
-  background-color: rgba(250, 250, 250, .5);
   border-radius: $border-radius;
 }
 
@@ -229,7 +228,7 @@ div {
   background: none;
   color: $brand-color;
   text-decoration: none;
-  border: 1px dotted $light-grey;
+  border: 1px dotted $light-violet;
   border-radius: $border-radius;
   transition: all .4s;
 }
@@ -270,6 +269,10 @@ div {
 
 .btn-full-width {
   width: 100%;
+}
+
+button:focus {
+  outline: none;
 }
 
 .display-none {
