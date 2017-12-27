@@ -4,7 +4,7 @@
 html {
   font-family: "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 22px;
-  color: #252733; }
+  color: #282640; }
 
 body {
   font-size: 1rem;
@@ -19,7 +19,7 @@ div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 0.4rem solid #4b4d6b; }
+  border-top: 0.4rem solid #595385; }
 
 .play-area {
   align-self: center;
@@ -40,7 +40,7 @@ div {
   padding-top: 1.9rem;
   padding-bottom: 1.8rem;
   color: #fff;
-  background-color: #4b4d6b;
+  background-color: #595385;
   border: 1px solid transparent;
   border-radius: 0.25rem; }
 
@@ -108,7 +108,7 @@ div {
   line-height: 0;
   margin-top: 1.82rem;
   margin-bottom: 2.6rem;
-  color: #4b4d6b; }
+  color: #595385; }
 
 .options {
   margin-top: .5rem; }
@@ -131,7 +131,7 @@ div {
   justify-content: center;
   height: 100vh;
   color: #f8f8fa;
-  background-color: #4b4d6b; }
+  background-color: #595385; }
 
 .footer-item {
   align-self: center; }
@@ -156,9 +156,9 @@ div {
   font-family: inherit;
   font-size: 1rem;
   background: none;
-  color: #4b4d6b;
+  color: #595385;
   text-decoration: none;
-  border: 1px dotted #8d92cc;
+  border: 1px dotted #978ee6;
   border-radius: 0.25rem;
   transition: all .4s; }
 
@@ -166,7 +166,7 @@ div {
 .btn:focus {
   text-decoration: none;
   color: #fff;
-  background: #4b4d6b;
+  background: #595385;
   border: 1px solid transparent; }
 
 .btn-animated {
@@ -175,16 +175,16 @@ div {
 @keyframes selectedbutton {
   0% {
     color: #fff;
-    background: #4b4d6b; }
+    background: #595385; }
   26% {
     color: #fff;
-    background: #8d92cc; }
+    background: #978ee6; }
   54% {
     color: #fff;
-    background: #4b4d6b; }
+    background: #595385; }
   92% {
     color: #fff;
-    background: #8d92cc; } }
+    background: #978ee6; } }
 .btn-full-width {
   width: 100%; }
 
