@@ -42,7 +42,8 @@ div {
 .main-container {
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   border-top: 0.4rem solid $brand-color;
 }
@@ -177,6 +178,43 @@ div {
 
 .player-selection {
   width: 32%;
+}
+
+
+// Footer
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  color: $very-light-grey;
+  background-color: $brand-color;
+}
+
+.footer-item {
+  align-self: center;
+}
+
+.credits {
+  margin-bottom: 2rem;
+}
+
+.footer-link {
+  color: $very-light-grey;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: $white;
+}
+
+.github-icon {
+  width: 2rem;
+  fill: $very-light-grey;
+  overflow: visible !important;
 }
 
 
