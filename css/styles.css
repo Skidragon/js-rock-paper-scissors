@@ -13,6 +13,11 @@ body {
 div {
   padding: .5rem; }
 
+a {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  text-decoration: none; }
+
 .main-container {
   height: 100vh;
   display: flex;
@@ -36,7 +41,7 @@ div {
   flex-direction: column;
   align-items: center;
   flex-basis: 28%;
-  margin-top: 1.5rem;
+  margin-top: 1.4rem;
   padding-top: 1.9rem;
   padding-bottom: 1.8rem;
   color: #fff;
@@ -87,6 +92,7 @@ div {
   flex-direction: column;
   align-items: center;
   width: 4rem;
+  font-family: "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
   border-radius: 0.25rem; }
 
 .score-container-player {
@@ -101,11 +107,12 @@ div {
 .score-title {
   margin-top: 0;
   margin-bottom: .9rem;
-  font-size: 1rem; }
+  font-size: .95rem; }
 
 .score {
   margin-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-size: .95rem; }
 
 .output-result {
   display: flex;
@@ -155,7 +162,8 @@ div {
   align-self: center; }
 
 .credits {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-size: 1.1rem; }
 
 .footer-link {
   color: #f8f8fa; }
@@ -220,5 +228,8 @@ button:focus {
 
 .display-none {
   display: none; }
+
+.no-border-link {
+  border: none; }
 
 /*# sourceMappingURL=styles.css.map */
