@@ -6,6 +6,7 @@ $brand-color: #595385;
 $very-dark-violet: #282640;
 $lighter-violet: #726bab;
 $light-violet: #978ee6;
+$pinkish-violet: #615285;
 
 $green: #59d975;
 $yellow: #e6c25c;
@@ -16,6 +17,23 @@ $very-light-grey: #f8f8fa;
 $white: #fff;
 
 $border-radius: .25rem;
+
+
+// Mixins
+
+
+@mixin background-gradient {
+  background: -webkit-linear-gradient(-45deg, $pinkish-violet 0, $brand-color 100%);
+  background: -moz-linear-gradient(135deg, $pinkish-violet 0, $brand-color 100%);
+  background: linear-gradient(135deg, $pinkish-violet 0, $brand-color 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+}
 
 
 // Initial Setup
@@ -74,9 +92,9 @@ div {
   padding-top: 1.9rem;
   padding-bottom: 1.8rem;
   color: $white;
-  background-color: $brand-color;
   border: 1px solid transparent;
   border-radius: $border-radius;
+  @include background-gradient;
 }
 
 .player-title,
@@ -191,7 +209,7 @@ div {
   justify-content: center;
   height: 100vh;
   color: $very-light-grey;
-  background-color: $brand-color;
+  @include background-gradient;
 }
 
 .footer-item {
@@ -237,8 +255,8 @@ div {
 .btn:focus {
   text-decoration: none;
   color: $white;
-  background: $brand-color;
   border: 1px solid transparent;
+  @include background-gradient;
 }
 
 .btn-animated {

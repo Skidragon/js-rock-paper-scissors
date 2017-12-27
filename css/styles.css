@@ -40,9 +40,18 @@ div {
   padding-top: 1.9rem;
   padding-bottom: 1.8rem;
   color: #fff;
-  background-color: #595385;
   border: 1px solid transparent;
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+  background: -webkit-linear-gradient(-45deg, #615285 0, #595385 100%);
+  background: -moz-linear-gradient(135deg, #615285 0, #595385 100%);
+  background: linear-gradient(135deg, #615285 0, #595385 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto; }
 
 .player-title,
 .computer-title {
@@ -131,7 +140,16 @@ div {
   justify-content: center;
   height: 100vh;
   color: #f8f8fa;
-  background-color: #595385; }
+  background: -webkit-linear-gradient(-45deg, #615285 0, #595385 100%);
+  background: -moz-linear-gradient(135deg, #615285 0, #595385 100%);
+  background: linear-gradient(135deg, #615285 0, #595385 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto; }
 
 .footer-item {
   align-self: center; }
@@ -166,8 +184,17 @@ div {
 .btn:focus {
   text-decoration: none;
   color: #fff;
-  background: #595385;
-  border: 1px solid transparent; }
+  border: 1px solid transparent;
+  background: -webkit-linear-gradient(-45deg, #615285 0, #595385 100%);
+  background: -moz-linear-gradient(135deg, #615285 0, #595385 100%);
+  background: linear-gradient(135deg, #615285 0, #595385 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto; }
 
 .btn-animated {
   animation: 1s ease-in-out selectedbutton; }
