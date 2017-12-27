@@ -175,12 +175,16 @@ div {
 
 @keyframes selectedbutton {
   0% {
+    color: #fff;
     background: #4b4d6b; }
   26% {
+    color: #fff;
     background: #8d92cc; }
   54% {
+    color: #fff;
     background: #4b4d6b; }
   92% {
+    color: #fff;
     background: #8d92cc; } }
 .btn-full-width {
   width: 100%; }

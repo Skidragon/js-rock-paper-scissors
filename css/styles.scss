@@ -248,18 +248,22 @@ div {
 
 @keyframes selectedbutton {
   0% {
+    color: $white;
     background: $brand-color;
   }
 
   26% {
+    color: $white;
     background: $light-violet;
   }
 
   54% {
+    color: $white;
     background: $brand-color;
   }
 
   92% {
+    color: $white;
     background: $light-violet;
   }
 }
