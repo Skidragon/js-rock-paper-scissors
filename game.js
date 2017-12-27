@@ -138,6 +138,8 @@ class Game {
   }
 
   findGameWinner() {
+    this.increaseRoundScore();
+
     if (this.playerScore > this.computerScore) {
       return this.playerWinsGame();
 
@@ -146,6 +148,17 @@ class Game {
     }
 
     return this.theresNoWinner();
+  }
+
+  increaseRoundScore() {
+    if (this.playerSelection == this.computerSelection) {
+      return this.tieScore++;
+
+    } else if (this.computerSelection == DEFEATEDBY[this.playerSelection]) {
+      return this.playerScore++;
+    }
+
+    return this.computerScore++;
   }
 
   playerWinsGame() {
