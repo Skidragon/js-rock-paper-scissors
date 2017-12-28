@@ -47,13 +47,28 @@ class Game {
     this.computerSelection = sample(OPTIONS);
     this.round++;
 
+    this.delayedOutputRound();
+    this.delayedOutputReaction("😯");
     this.countDown();
     this.findWinner();
   }
 
+  delayedOutputRound() {
+    let round = document.querySelector("#current-round");
+
+    window.setTimeout(() => {
+      round.innerText = `Round ${this.round}`;
+    }, 1000);
+  }
+
+  delayedOutputReaction(reaction) {
+    window.setTimeout(() => {
+      this.outputReaction(reaction);
+    }, 1000);
+  }
+
   countDown() {
     this.disableButtons();
-    this.delayedOutputReaction("😯");
     this.startCountDown();
   }
 
@@ -67,12 +82,6 @@ class Game {
         button.disabled = false;
       });
     }, 4000);
-  }
-
-  delayedOutputReaction(reaction) {
-    window.setTimeout(() => {
-      this.outputReaction(reaction);
-    }, 1000);
   }
 
   startCountDown() {
@@ -184,7 +193,6 @@ class Game {
 
   outputInformation() {
     this.outputSelections();
-    this.outputRound();
     this.outputScore();
   }
 
@@ -194,12 +202,6 @@ class Game {
 
     playerSelection.innerText = capitalize(this.playerSelection);
     computerSelection.innerText = capitalize(this.computerSelection);
-  }
-
-  outputRound() {
-    let round = document.querySelector("#current-round");
-
-    round.innerText = this.round;
   }
 
   outputScore() {
