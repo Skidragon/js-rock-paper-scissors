@@ -215,13 +215,11 @@ class Game {
   }
 
   outputReaction(reaction) {
-    let outputReaction = document.querySelector("#output-reaction");
-
-    outputReaction.innerHTML = reaction;
+    this.outputMessage(reaction, "#output-reaction");
   }
 
-  outputMessage(message) {
-    let outputMessage = document.querySelector("#output-message");
+  outputMessage(message, element = "#output-message") {
+    let outputMessage = document.querySelector(element);
 
     outputMessage.innerHTML = message;
   }
