@@ -4,7 +4,7 @@
 html {
   font-family: "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 22px;
-  color: #282640; }
+  color: #2a2847; }
 
 body {
   font-size: 1rem;
@@ -24,7 +24,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 0.4rem solid #595385; }
+  border-top: 0.4rem solid #544d8a; }
 
 .play-area {
   align-self: center;
@@ -47,9 +47,9 @@ a {
   color: #fff;
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  background: -webkit-linear-gradient(-45deg, #615285 0, #595385 100%);
-  background: -moz-linear-gradient(135deg, #615285 0, #595385 100%);
-  background: linear-gradient(135deg, #615285 0, #595385 100%);
+  background: -webkit-linear-gradient(-45deg, #6d5999 0, #544d8a 100%);
+  background: -moz-linear-gradient(135deg, #6d5999 0, #544d8a 100%);
+  background: linear-gradient(135deg, #6d5999 0, #544d8a 100%);
   background-position: 50% 50%;
   -webkit-background-origin: padding-box;
   background-origin: padding-box;
@@ -124,7 +124,7 @@ a {
   line-height: 0;
   margin-top: 1.82rem;
   margin-bottom: 2.6rem;
-  color: #595385; }
+  color: #544d8a; }
 
 .options {
   margin-top: .5rem; }
@@ -147,9 +147,9 @@ a {
   justify-content: center;
   height: 100vh;
   color: #f5f7fa;
-  background: -webkit-linear-gradient(-45deg, #615285 0, #595385 100%);
-  background: -moz-linear-gradient(135deg, #615285 0, #595385 100%);
-  background: linear-gradient(135deg, #615285 0, #595385 100%);
+  background: -webkit-linear-gradient(-45deg, #6d5999 0, #544d8a 100%);
+  background: -moz-linear-gradient(135deg, #6d5999 0, #544d8a 100%);
+  background: linear-gradient(135deg, #6d5999 0, #544d8a 100%);
   background-position: 50% 50%;
   -webkit-background-origin: padding-box;
   background-origin: padding-box;
@@ -182,9 +182,9 @@ a {
   font-family: inherit;
   font-size: 1rem;
   background: none;
-  color: #595385;
+  color: #544d8a;
   text-decoration: none;
-  border: 1px dotted #978ee6;
+  border: 1px dotted #ac8df0;
   border-radius: 0.25rem;
   transition: all .4s; }
 
@@ -193,9 +193,9 @@ a {
   text-decoration: none;
   color: #fff;
   border: 1px solid transparent;
-  background: -webkit-linear-gradient(-45deg, #615285 0, #595385 100%);
-  background: -moz-linear-gradient(135deg, #615285 0, #595385 100%);
-  background: linear-gradient(135deg, #615285 0, #595385 100%);
+  background: -webkit-linear-gradient(-45deg, #6d5999 0, #544d8a 100%);
+  background: -moz-linear-gradient(135deg, #6d5999 0, #544d8a 100%);
+  background: linear-gradient(135deg, #6d5999 0, #544d8a 100%);
   background-position: 50% 50%;
   -webkit-background-origin: padding-box;
   background-origin: padding-box;
@@ -210,16 +210,16 @@ a {
 @keyframes selectedbutton {
   0% {
     color: #fff;
-    background: #595385; }
+    background: #544d8a; }
   26% {
     color: #fff;
-    background: #978ee6; }
+    background: #8b81e6; }
   54% {
     color: #fff;
-    background: #595385; }
+    background: #544d8a; }
   92% {
     color: #fff;
-    background: #978ee6; } }
+    background: #8b81e6; } }
 .btn-full-width {
   width: 100%; }
 

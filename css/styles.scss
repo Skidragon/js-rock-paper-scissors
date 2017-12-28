@@ -1,13 +1,13 @@
 // Variables
 
 
-$brand-color: #595385;
+$brand-color: #544d8a;
 
-$very-dark-violet: #282640;
-$lighter-violet: #726bab;
-$light-violet: #978ee6;
-$pinkish-violet: #615285;
-
+$very-dark-violet: #2a2847;
+$lighter-violet: #6d64b3;
+$light-violet: #8b81e6;
+$pinkish-violet: #6d5999;
+$light-pinkish-violet: #ac8df0;
 
 $green: #59d975;
 $yellow: #e6c25c;
@@ -255,7 +255,7 @@ a {
   background: none;
   color: $brand-color;
   text-decoration: none;
-  border: 1px dotted $light-violet;
+  border: 1px dotted $light-pinkish-violet;
   border-radius: $border-radius;
   transition: all .4s;
 }
