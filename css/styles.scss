@@ -8,12 +8,12 @@ $lighter-violet: #726bab;
 $light-violet: #978ee6;
 $pinkish-violet: #615285;
 
+
 $green: #59d975;
 $yellow: #e6c25c;
 $red: #d95959;
 
-$light-grey: #ccc;
-$very-light-grey: #f8f8fa;
+$light-grey: #f5f7fa;
 $white: #fff;
 
 $border-radius: .25rem;
@@ -51,7 +51,7 @@ html {
 
 body {
   font-size: 1rem;
-  background-color: $very-light-grey;
+  background-color: $light-grey;
 }
 
 div {
@@ -216,7 +216,7 @@ a {
   align-content: center;
   justify-content: center;
   height: 100vh;
-  color: $very-light-grey;
+  color: $light-grey;
   @include background-gradient;
 }
 
@@ -230,7 +230,7 @@ a {
 }
 
 .footer-link {
-  color: $very-light-grey;
+  color: $light-grey;
 }
 
 .footer-link:hover,
@@ -240,7 +240,7 @@ a {
 
 .github-icon {
   width: 2rem;
-  fill: $very-light-grey;
+  fill: $light-grey;
   overflow: visible !important;
 }
 

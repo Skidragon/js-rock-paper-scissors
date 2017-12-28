@@ -8,7 +8,7 @@ html {
 
 body {
   font-size: 1rem;
-  background-color: #f8f8fa; }
+  background-color: #f5f7fa; }
 
 div {
   padding: .5rem; }
@@ -146,7 +146,7 @@ a {
   align-content: center;
   justify-content: center;
   height: 100vh;
-  color: #f8f8fa;
+  color: #f5f7fa;
   background: -webkit-linear-gradient(-45deg, #615285 0, #595385 100%);
   background: -moz-linear-gradient(135deg, #615285 0, #595385 100%);
   background: linear-gradient(135deg, #615285 0, #595385 100%);
@@ -166,7 +166,7 @@ a {
   font-size: 1.1rem; }
 
 .footer-link {
-  color: #f8f8fa; }
+  color: #f5f7fa; }
 
 .footer-link:hover,
 .footer-link:focus {
@@ -174,7 +174,7 @@ a {
 
 .github-icon {
   width: 2rem;
-  fill: #f8f8fa;
+  fill: #f5f7fa;
   overflow: visible !important; }
 
 .btn {
