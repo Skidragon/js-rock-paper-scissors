@@ -48,7 +48,7 @@ class Game {
     this.round++;
 
     this.delayedOutputRound();
-    this.delayedOutputReaction("😯");
+    this.delayedOutputEmoji("😯");
     this.countDown();
     this.findWinner();
   }
@@ -61,9 +61,9 @@ class Game {
     }, 1000);
   }
 
-  delayedOutputReaction(reaction) {
+  delayedOutputEmoji(emoji) {
     window.setTimeout(() => {
-      this.outputReaction(reaction);
+      this.outputEmoji(emoji);
     }, 1000);
   }
 
@@ -124,14 +124,14 @@ class Game {
   tieInRound() {
     this.tieScore++;
     this.outputInformation();
-    this.outputReaction("😕");
+    this.outputEmoji("😕");
     this.outputMessage("Tie!");
   }
 
   playerWinsRound() {
     this.playerScore++;
     this.outputInformation();
-    this.outputReaction("😁");
+    this.outputEmoji("😁");
     this.outputMessage(
       `${capitalize(this.playerSelection)} beats ${this.computerSelection}.`
     );
@@ -140,7 +140,7 @@ class Game {
   computerWinsRound() {
     this.computerScore++;
     this.outputInformation();
-    this.outputReaction("😞");
+    this.outputEmoji("😞");
     this.outputMessage(
       `${capitalize(this.computerSelection)} beats ${this.playerSelection}.`
     );
@@ -172,21 +172,21 @@ class Game {
 
   playerWinsGame() {
     this.outputInformation();
-    this.outputReaction("😂");
+    this.outputEmoji("😂");
     this.outputMessage("You won the game!");
     this.prepareGameRestart();
   }
 
   computerWinsGame() {
     this.outputInformation();
-    this.outputReaction("😢");
+    this.outputEmoji("😢");
     this.outputMessage("Ouch! The computer wins.");
     this.prepareGameRestart();
   }
 
   theresNoWinner() {
     this.outputInformation();
-    this.outputReaction("😒");
+    this.outputEmoji("😒");
     this.outputMessage("There's no winner!");
     this.prepareGameRestart();
   }
@@ -214,8 +214,8 @@ class Game {
     computerScore.innerText = this.computerScore;
   }
 
-  outputReaction(reaction) {
-    this.outputMessage(reaction, "#output-reaction");
+  outputEmoji(emoji) {
+    this.outputMessage(emoji, "#output-emoji");
   }
 
   outputMessage(message, element = "#output-message") {
