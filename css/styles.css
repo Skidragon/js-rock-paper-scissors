@@ -8,7 +8,17 @@ html {
 
 body {
   font-size: 1rem;
-  background-color: #f5f7fa; }
+  background-color: #fbfafc;
+  background-image: -webkit-linear-gradient(-45deg, transparent 25%, #f9f5ff 25%, #f9f5ff 50%, transparent 50%);
+  background-image: -moz-linear-gradient(135deg, transparent 25%, #f9f5ff 25%, #f9f5ff 50%, transparent 50%);
+  background-image: linear-gradient(135deg, transparent 25%, #f9f5ff 25%, #f9f5ff 50%, transparent 50%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto; }
 
 div {
   padding: .5rem; }
@@ -153,7 +163,7 @@ a {
   align-content: center;
   justify-content: center;
   height: 100vh;
-  color: #f5f7fa;
+  color: #fbfafc;
   background: -webkit-linear-gradient(-45deg, #6d5999 0, #544d8a 100%);
   background: -moz-linear-gradient(135deg, #6d5999 0, #544d8a 100%);
   background: linear-gradient(135deg, #6d5999 0, #544d8a 100%);
@@ -173,7 +183,7 @@ a {
   font-size: 1.1rem; }
 
 .footer-link {
-  color: #f5f7fa; }
+  color: #fbfafc; }
 
 .footer-link:hover,
 .footer-link:focus {
@@ -181,7 +191,7 @@ a {
 
 .github-icon {
   width: 2rem;
-  fill: #f5f7fa;
+  fill: #fbfafc;
   overflow: visible !important; }
 
 .btn {
