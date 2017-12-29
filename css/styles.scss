@@ -10,13 +10,11 @@ $pinkish-violet: #6d5999;
 $light-pinkish-violet: #ac8df0;
 
 $green: #76D66D;
-$yellow: #e3ab09;
+$yellow: #e3ab04;
 $red: #d95757;
 
-$background-grey-1: #fbfafc;
-$background-grey-2: #f9f5ff;
-
-$light-grey: #fbfafc;
+$light-grey-1: #fbfafc;
+$light-grey-2: #f9f5ff;
 $white: #fff;
 
 $border-radius: .25rem;
@@ -54,10 +52,10 @@ html {
 
 body {
   font-size: 1rem;
-  background-color: $background-grey-1;
-  background-image: -webkit-linear-gradient(-45deg, transparent 25%, $background-grey-2 25%, $background-grey-2 50%, transparent 50%);
-  background-image: -moz-linear-gradient(135deg, transparent 25%, $background-grey-2 25%, $background-grey-2 50%, transparent 50%);
-  background-image: linear-gradient(135deg, transparent 25%, $background-grey-2 25%, $background-grey-2 50%, transparent 50%);
+  background-color: $light-grey-1;
+  background-image: -webkit-linear-gradient(-45deg, transparent 25%, $light-grey-2 25%, $light-grey-2 50%, transparent 50%);
+  background-image: -moz-linear-gradient(135deg, transparent 25%, $light-grey-2 25%, $light-grey-2 50%, transparent 50%);
+  background-image: linear-gradient(135deg, transparent 25%, $light-grey-2 25%, $light-grey-2 50%, transparent 50%);
   background-position: 50% 50%;
  -webkit-background-origin: padding-box;
   background-origin: padding-box;
@@ -236,7 +234,7 @@ a {
   align-content: center;
   justify-content: center;
   height: 100vh;
-  color: $light-grey;
+  color: $light-grey-1;
   @include background-gradient;
 }
 
@@ -250,7 +248,7 @@ a {
 }
 
 .footer-link {
-  color: $light-grey;
+  color: $light-grey-1;
 }
 
 .footer-link:hover,
@@ -260,7 +258,7 @@ a {
 
 .github-icon {
   width: 2rem;
-  fill: $light-grey;
+  fill: $light-grey-1;
   overflow: visible !important;
 }
 
