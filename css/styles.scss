@@ -75,6 +75,15 @@ a {
   text-decoration: none;
 }
 
+.gradient-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .18rem;
+  @include background-gradient;
+}
+
 .main-container {
   height: 100vh;
   display: flex;
