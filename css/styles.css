@@ -56,7 +56,8 @@ a {
   -webkit-background-clip: border-box;
   background-clip: border-box;
   -webkit-background-size: auto auto;
-  background-size: auto auto; }
+  background-size: auto auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.035); }
 
 .player-title,
 .computer-title {
@@ -76,7 +77,8 @@ a {
   margin-right: 1.5rem;
   background-color: #fff;
   border: 1px solid rgba(72, 74, 97, 0.2);
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.035); }
 
 .output-main-item {
   align-self: center; }
