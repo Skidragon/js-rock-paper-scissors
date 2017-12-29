@@ -4,7 +4,7 @@
 html {
   font-family: "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 22px;
-  color: #2a2847; }
+  color: #3d3a6e; }
 
 body {
   font-size: 1rem;
@@ -91,18 +91,23 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 0.45rem;
   width: 4rem;
   font-family: "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  color: #544d8a;
   border-radius: 0.25rem; }
 
 .score-container-player {
-  border: 1px solid #59d975; }
+  border: 1px solid #76D66D;
+  border-bottom-width: 2px; }
 
 .score-container-tie {
-  border: 1px solid #e6c25c; }
+  border: 1px solid #e3ab09;
+  border-bottom-width: 2px; }
 
 .score-container-computer {
-  border: 1px solid #d95959; }
+  border: 1px solid #d95757;
+  border-bottom-width: 2px; }
 
 .score-title {
   margin-top: 0;
