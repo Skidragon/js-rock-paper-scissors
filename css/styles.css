@@ -23,11 +23,6 @@ body {
 div {
   padding: .5rem; }
 
-a {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  text-decoration: none; }
-
 .gradient-bar {
   position: absolute;
   top: 0;
@@ -196,8 +191,17 @@ a {
   align-self: center; }
 
 .credits {
+  margin-left: .15rem;
   margin-bottom: 2rem;
   font-size: 1.1rem; }
+
+.credits-pre-name {
+  margin-right: -.1rem; }
+
+.credits-name {
+  padding-top: .1rem;
+  padding-left: .1rem;
+  padding-right: .15rem; }
 
 .footer-link {
   color: #fbfafc; }
@@ -205,6 +209,17 @@ a {
 .footer-link:hover,
 .footer-link:focus {
   color: #fff; }
+
+.text-link {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  text-decoration: none;
+  transition: all .4s ease-in-out; }
+
+.text-link:hover,
+.text-link:focus {
+  color: #544d8a;
+  background-color: #fff; }
 
 .github-icon {
   width: 2rem;
@@ -262,8 +277,5 @@ button:focus {
 
 .display-none {
   display: none; }
-
-.no-border-link {
-  border: none; }
 
 /*# sourceMappingURL=styles.css.map */

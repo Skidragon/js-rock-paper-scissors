@@ -69,12 +69,6 @@ div {
   padding: .5rem;
 }
 
-a {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  text-decoration: none;
-}
-
 .gradient-bar {
   position: absolute;
   top: 0;
@@ -252,8 +246,19 @@ a {
 }
 
 .credits {
+  margin-left: .15rem;
   margin-bottom: 2rem;
   font-size: 1.1rem;
+}
+
+.credits-pre-name {
+  margin-right: -.1rem;
+}
+
+.credits-name {
+  padding-top: .1rem;
+  padding-left: .1rem;
+  padding-right: .15rem;
 }
 
 .footer-link {
@@ -263,6 +268,19 @@ a {
 .footer-link:hover,
 .footer-link:focus {
   color: $white;
+}
+
+.text-link {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+}
+
+.text-link:hover,
+.text-link:focus {
+  color: $brand-color;
+  background-color: $white;
 }
 
 .github-icon {
@@ -331,8 +349,4 @@ button:focus {
 
 .display-none {
   display: none;
-}
-
-.no-border-link {
-  border: none;
 }
