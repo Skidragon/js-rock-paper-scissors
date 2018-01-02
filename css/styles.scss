@@ -19,6 +19,11 @@ $white: #fff;
 
 $border-radius: .25rem;
 
+$small-devices-height: 535px;
+$small-devices: 576px;
+$medium-devices: 800px;
+$large-devices: 1025px;
+
 
 // Mixins
 
@@ -36,6 +41,18 @@ $border-radius: .25rem;
   background-size: auto auto;
 }
 
+@mixin max-media-width($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin max-media-height($height) {
+  @media only screen and (max-height: $height) {
+    @content;
+  }
+}
+
 
 // Initial Setup
 
@@ -48,6 +65,18 @@ html {
   font-family: "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 22px;
   color: $very-dark-violet;
+
+  @include max-media-width($large-devices) {
+    font-size: 20px;
+  }
+
+  @include max-media-width($small-devices) {
+    font-size: 16px;
+  }
+
+  @include max-media-height($small-devices-height) {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -79,7 +108,7 @@ div {
 }
 
 .main-container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,17 +119,67 @@ div {
 .play-area {
   align-self: center;
   width: 1040px;
+
+  @include max-media-width($large-devices) {
+    width: 100%;
+  }
+
+  @include max-media-width($medium-devices) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include max-media-height($small-devices-height) {
+    padding: 0;
+  }
 }
 
 .output {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include max-media-width($medium-devices) {
+    flex-direction: column;
+    min-width: 20rem;
+    max-width: 21rem;
+  }
 }
 
 
 // Player and Computer Boxes
 
+
+.regular-devices {
+  display: flex !important;
+
+  @include max-media-width($medium-devices) {
+    display: none !important;
+  }
+}
+
+.small-devices {
+  display: none !important;
+
+  @include max-media-width($medium-devices) {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .6rem;
+  }
+
+  @include max-media-height($small-devices-height) {
+    margin-top: .1rem;
+  }
+}
+
+.output-players {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
 
 .output-player,
 .output-computer {
@@ -116,6 +195,20 @@ div {
   border-radius: $border-radius;
   @include background-gradient;
   box-shadow: 0 5px 15px rgba(0, 0, 0, .035);
+
+  @include max-media-width($medium-devices) {
+    flex-basis: 47%;
+    margin-top: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  @include max-media-height($small-devices-height) {
+    flex-basis: 48.5%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    box-shadow: none;
+  }
 }
 
 .player-title,
@@ -123,10 +216,33 @@ div {
   margin-bottom: .8rem;
   font-size: 1.55rem;
   font-style: italic;
+
+  @include max-media-width($medium-devices) {
+    margin-top: .5rem;
+    margin-bottom: .8rem;
+    font-size: 1.15rem;
+  }
+
+  @include max-media-height($small-devices-height) {
+    margin-top: .1rem;
+    margin-bottom: .35rem;
+    font-size: 1.1rem;
+  }
 }
 
 .output-selection {
   font-size: 1.25rem;
+
+  @include max-media-width($medium-devices) {
+    margin-top: .25rem;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+  }
+
+  @include max-media-height($small-devices-height) {
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+  }
 }
 
 
@@ -144,6 +260,16 @@ div {
   border: 1px solid rgba(72, 74, 97, .2);
   border-radius: $border-radius;
   box-shadow: 0 5px 15px rgba(0, 0, 0, .035);
+
+  @include max-media-width($medium-devices) {
+    margin-left: initial;
+    margin-right: initial;
+    width: 100%;
+  }
+
+  @include max-media-height($small-devices-height) {
+    box-shadow: none;
+  }
 }
 
 .output-main-item {
@@ -223,7 +349,7 @@ div {
   padding: 0;
 }
 
-.player-selection {
+.player-throw {
   width: 32%;
 }
 
@@ -237,6 +363,7 @@ div {
   align-content: center;
   justify-content: center;
   height: 100vh;
+  padding: 1rem;
   color: $light-grey-1;
   @include background-gradient;
 }
@@ -248,7 +375,16 @@ div {
 .credits {
   margin-left: .15rem;
   margin-bottom: 2rem;
+  padding-left: 0;
+  padding-right: 0;
   font-size: 1.1rem;
+}
+
+.credits-text {
+  @include max-media-width($small-devices) {
+    text-align: center;
+    line-height: 1.7;
+  }
 }
 
 .credits-pre-name {
@@ -256,9 +392,19 @@ div {
 }
 
 .credits-name {
-  padding-top: .1rem;
+  padding-top: .24rem;
   padding-left: .1rem;
   padding-right: .15rem;
+  padding-bottom: .1rem;
+
+  @include max-media-width($medium-devices) {
+    padding-top: .35rem;
+    padding-bottom: .3rem;
+  }
+
+  @include max-media-width($small-devices) {
+    display: ruby;
+  }
 }
 
 .footer-link {
@@ -294,7 +440,7 @@ div {
 
 
 .btn {
-  padding: .7rem .5rem;
+  padding: .7rem .4rem;
   font-family: inherit;
   font-size: 1rem;
   background: none;

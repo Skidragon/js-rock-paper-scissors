@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rock, Paper, Scissors</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -15,7 +16,7 @@
 
       <div class="output">
 
-        <div class="output-player">
+        <div class="output-player regular-devices">
           <h2 class="player-title">You</h2>
           <p class="output-selection" id="player-selection">Choose...</p>
         </div>
@@ -47,13 +48,13 @@
 
           <div class="output-main-item options">
             <div id="options-throw" class="options-throw">
-              <button class="player-selection btn" data-selection="rock">
+              <button class="player-throw btn" data-selection="rock">
               Rock
               </button>
-              <button class="player-selection btn" data-selection="paper">
+              <button class="player-throw btn" data-selection="paper">
               Paper
               </button>
-              <button class="player-selection btn" data-selection="scissors">Scissors
+              <button class="player-throw btn" data-selection="scissors">Scissors
               </button>
             </div>
 
@@ -65,9 +66,24 @@
           </div>
         </div>
 
-        <div class="output-computer">
+        <div class="output-computer regular-devices">
           <h2 class="computer-title">Computer</h2>
           <p class="output-selection" id="computer-selection">Waiting...</p>
+        </div>
+
+        <div class="output-players small-devices">
+          <div class="output-player">
+            <h2 class="player-title">You</h2>
+            <p class="output-selection" id="player-selection-small">
+            Choose...
+            </p>
+          </div>
+          <div class="output-computer">
+            <h2 class="computer-title">Device</h2>
+            <p class="output-selection" id="computer-selection-small">
+            Waiting...
+            </p>
+          </div>
         </div>
 
       </div>

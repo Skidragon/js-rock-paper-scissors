@@ -13,7 +13,7 @@ const DEFEATEDBY = {
   scissors: "paper"
 };
 
-const BUTTONS = document.querySelectorAll(".player-selection");
+const BUTTONS = document.querySelectorAll(".player-throw");
 
 class Game {
 
@@ -192,13 +192,18 @@ class Game {
   }
 
   outputInformation() {
-    this.outputSelections();
+    this.outputThrows();
     this.outputScore();
   }
 
-  outputSelections() {
-    let playerSelection = document.querySelector("#player-selection");
-    let computerSelection = document.querySelector("#computer-selection");
+  outputThrows() {
+    this.outputThrowsFor("#player-selection", "#computer-selection");
+    this.outputThrowsFor("#player-selection-small", "#computer-selection-small");
+  }
+
+  outputThrowsFor(playerId, computerId) {
+    let playerSelection = document.querySelector(playerId);
+    let computerSelection = document.querySelector(computerId);
 
     playerSelection.innerText = capitalize(this.playerSelection);
     computerSelection.innerText = capitalize(this.computerSelection);
