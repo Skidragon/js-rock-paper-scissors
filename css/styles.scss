@@ -21,7 +21,7 @@ $border-radius: .25rem;
 
 $small-devices-height: 535px;
 $small-devices: 576px;
-$medium-devices: 800px;
+$medium-devices: 812px;
 $large-devices: 1025px;
 
 
@@ -262,6 +262,7 @@ div {
   box-shadow: 0 5px 15px rgba(0, 0, 0, .035);
 
   @include max-media-width($medium-devices) {
+    flex-basis: auto;
     margin-left: initial;
     margin-right: initial;
     width: 100%;

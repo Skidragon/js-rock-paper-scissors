@@ -78,7 +78,7 @@ div {
     width: 100%;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 812px) {
   .play-area {
     display: flex;
     justify-content: center;
@@ -95,7 +95,7 @@ div {
   justify-content: space-between;
   align-items: center;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 812px) {
   .output {
     flex-direction: column;
     min-width: 20rem;
@@ -106,7 +106,7 @@ div {
 .regular-devices {
   display: flex !important;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 812px) {
   .regular-devices {
     display: none !important;
   }
@@ -115,7 +115,7 @@ div {
 .small-devices {
   display: none !important;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 812px) {
   .small-devices {
     display: flex !important;
     flex-direction: row;
@@ -161,7 +161,7 @@ div {
   background-size: auto auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.035);
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 812px) {
   .output-player,
   .output-computer {
     flex-basis: 47%;
@@ -186,7 +186,7 @@ div {
   font-size: 1.55rem;
   font-style: italic;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 812px) {
   .player-title,
   .computer-title {
     margin-top: .5rem;
@@ -206,7 +206,7 @@ div {
 .output-selection {
   font-size: 1.25rem;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 812px) {
   .output-selection {
     margin-top: .25rem;
     margin-bottom: .5rem;
@@ -232,8 +232,9 @@ div {
   border-radius: 0.25rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.035);
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 812px) {
   .output-main {
+    flex-basis: auto;
     margin-left: initial;
     margin-right: initial;
     width: 100%;
@@ -375,7 +376,7 @@ div {
   padding-right: .15rem;
   padding-bottom: .1rem;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 812px) {
   .credits-name {
     padding-top: .35rem;
     padding-bottom: .3rem;
