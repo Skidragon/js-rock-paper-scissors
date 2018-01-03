@@ -14,6 +14,8 @@ const DEFEATEDBY = {
 };
 
 const BUTTONS = document.querySelectorAll(".player-throw");
+const ONE_SECOND = 1000;
+const FOUR_SECONDS = 4000;
 
 class Game {
 
@@ -27,8 +29,8 @@ class Game {
   start() {
     BUTTONS.forEach(button => {
       button.addEventListener("click", () => {
-        this.toggleButtonState(button, "btn-animated", 1000);
-        this.toggleButtonState(button, "btn-active", 4000);
+        this.toggleButtonState(button, "btn-animated", ONE_SECOND);
+        this.toggleButtonState(button, "btn-active", FOUR_SECONDS);
         this.playerSelection = button.dataset.selection;
 
         this.playRound();
@@ -59,13 +61,13 @@ class Game {
 
     window.setTimeout(() => {
       round.innerText = `Round ${this.round}`;
-    }, 1000);
+    }, ONE_SECOND);
   }
 
   delayedOutputEmoji(emoji) {
     window.setTimeout(() => {
       this.outputEmoji(emoji);
-    }, 1000);
+    }, ONE_SECOND);
   }
 
   countDown() {
@@ -82,7 +84,7 @@ class Game {
       BUTTONS.forEach(button => {
         button.disabled = false;
       });
-    }, 4000);
+    }, FOUR_SECONDS);
   }
 
   startCountDown() {
@@ -100,7 +102,7 @@ class Game {
       } else {
         return;
       }
-    }, 1000);
+    }, ONE_SECOND);
   }
 
   findWinner() {
@@ -108,7 +110,7 @@ class Game {
       if (this.round < 5) return this.findRoundWinner();
 
       return this.findGameWinner();
-    }, 4000);
+    }, FOUR_SECONDS);
   }
 
   findRoundWinner() {
