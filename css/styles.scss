@@ -468,7 +468,9 @@ div {
 }
 
 .btn:hover,
-.btn:focus {
+.btn:active,
+.btn:focus,
+.btn-active {
   text-decoration: none;
   color: $white;
   border: 1px solid transparent;

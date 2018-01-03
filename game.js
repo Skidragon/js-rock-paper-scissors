@@ -27,7 +27,8 @@ class Game {
   start() {
     BUTTONS.forEach(button => {
       button.addEventListener("click", () => {
-        this.animateButton(button);
+        this.toggleButtonState(button, "btn-animated", 1000);
+        this.toggleButtonState(button, "btn-active", 4000);
         this.playerSelection = button.dataset.selection;
 
         this.playRound();
@@ -35,12 +36,12 @@ class Game {
     });
   }
 
-  animateButton(button) {
-    button.classList.add("btn-animated");
+  toggleButtonState(button, klass, timeout) {
+    button.classList.add(klass);
 
     window.setTimeout(() => {
-      button.classList.remove("btn-animated");
-    }, 1000);
+      button.classList.remove(klass);
+    }, timeout);
   }
 
   playRound() {
