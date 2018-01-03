@@ -1,4 +1,6 @@
+//
 // Variables
+//
 
 
 $brand-color: #544d8a;
@@ -25,7 +27,9 @@ $medium-devices: 812px;
 $large-devices: 1025px;
 
 
+//
 // Mixins
+//
 
 
 @mixin background-gradient {
@@ -54,7 +58,9 @@ $large-devices: 1025px;
 }
 
 
+//
 // Initial Setup
+//
 
 
 * {
@@ -147,7 +153,9 @@ div {
 }
 
 
+//
 // Player and Computer Boxes
+//
 
 
 .regular-devices {
@@ -246,7 +254,9 @@ div {
 }
 
 
+//
 // Central Box
+//
 
 
 .output-main {
@@ -355,7 +365,9 @@ div {
 }
 
 
+//
 // Footer
+//
 
 
 .footer {
@@ -437,7 +449,9 @@ div {
 }
 
 
+//
 // Helpers
+//
 
 
 .btn {
