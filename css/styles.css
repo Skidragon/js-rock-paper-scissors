@@ -5,7 +5,7 @@
 html {
   font-family: "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-size: 22px;
-  color: #3d3a6e;
+  color: #403d78;
 }
 @media only screen and (max-width: 1025px) {
   html {
@@ -48,9 +48,9 @@ div {
   left: 0;
   right: 0;
   padding: .18rem;
-  background: -webkit-linear-gradient(-45deg, #6d5999 0, #544d8a 100%);
-  background: -moz-linear-gradient(135deg, #6d5999 0, #544d8a 100%);
-  background: linear-gradient(135deg, #6d5999 0, #544d8a 100%);
+  background: -webkit-linear-gradient(-45deg, #705a9e 0, #544d8a 100%);
+  background: -moz-linear-gradient(135deg, #705a9e 0, #544d8a 100%);
+  background: linear-gradient(135deg, #705a9e 0, #544d8a 100%);
   background-position: 50% 50%;
   -webkit-background-origin: padding-box;
   background-origin: padding-box;
@@ -149,9 +149,9 @@ div {
   color: #fff;
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  background: -webkit-linear-gradient(-45deg, #6d5999 0, #544d8a 100%);
-  background: -moz-linear-gradient(135deg, #6d5999 0, #544d8a 100%);
-  background: linear-gradient(135deg, #6d5999 0, #544d8a 100%);
+  background: -webkit-linear-gradient(-45deg, #705a9e 0, #544d8a 100%);
+  background: -moz-linear-gradient(135deg, #705a9e 0, #544d8a 100%);
+  background: linear-gradient(135deg, #705a9e 0, #544d8a 100%);
   background-position: 50% 50%;
   -webkit-background-origin: padding-box;
   background-origin: padding-box;
@@ -335,9 +335,9 @@ div {
   height: 100vh;
   padding: 1rem;
   color: #fbfafc;
-  background: -webkit-linear-gradient(-45deg, #6d5999 0, #544d8a 100%);
-  background: -moz-linear-gradient(135deg, #6d5999 0, #544d8a 100%);
-  background: linear-gradient(135deg, #6d5999 0, #544d8a 100%);
+  background: -webkit-linear-gradient(-45deg, #705a9e 0, #544d8a 100%);
+  background: -moz-linear-gradient(135deg, #705a9e 0, #544d8a 100%);
+  background: linear-gradient(135deg, #705a9e 0, #544d8a 100%);
   background-position: 50% 50%;
   -webkit-background-origin: padding-box;
   background-origin: padding-box;
@@ -423,7 +423,7 @@ div {
   background: none;
   color: #544d8a;
   text-decoration: none;
-  border: 1px dotted #ac8df0;
+  border: 1px dotted #ac8bf3;
   border-radius: 0.25rem;
   transition: all .4s;
 }
@@ -433,9 +433,9 @@ div {
   text-decoration: none;
   color: #fff;
   border: 1px solid transparent;
-  background: -webkit-linear-gradient(-45deg, #6d5999 0, #544d8a 100%);
-  background: -moz-linear-gradient(135deg, #6d5999 0, #544d8a 100%);
-  background: linear-gradient(135deg, #6d5999 0, #544d8a 100%);
+  background: -webkit-linear-gradient(-45deg, #705a9e 0, #544d8a 100%);
+  background: -moz-linear-gradient(135deg, #705a9e 0, #544d8a 100%);
+  background: linear-gradient(135deg, #705a9e 0, #544d8a 100%);
   background-position: 50% 50%;
   -webkit-background-origin: padding-box;
   background-origin: padding-box;
